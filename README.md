@@ -1,6 +1,5 @@
 # Snake-Game-AI
 
-# AI-Driven Snake Game
 
 ## Overview
 This project is an implementation of the classic Snake game enhanced with artificial intelligence. Using Python and reinforcement learning techniques, the game features an AI that learns to navigate and maximize points by avoiding walls and its own tail while eating food.
@@ -55,5 +54,5 @@ Adjust AI settings like training iterations, display iterations, learning parame
 ## Contributing
 Contributions to improve the game or enhance the AI algorithm are welcome. Please fork the repository and open a pull request with your proposed changes.
 
-License
+## License
 This project is open-source and available under the MIT License. See the LICENSE file in the repository for more information.
