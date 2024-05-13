@@ -5,8 +5,7 @@ from board import BoardEnv
 import helper
 import time
 import random
-
-#   This is the SnakeGame class you'll be working with.
+#   This is the main set up of the snake game 
 #   It first initializes based on the default conditions.
 #   Then it trains according to the number of training steps
 #       printing the stats along the way
@@ -45,7 +44,6 @@ class SnakeGame:
         start = time.time()
 
         #   This loop will train for required number of times
-        #   WRITE YOUR CODE IN THIS LOOP TO CALL THE TRAINING FUNCTION.
         #   AS TRAINING IS HAPPENING THE CODE IN THE LOOP WILL PRINT STATISTICS.
         #   Use self.env.reset() to reset your game after each iteration.
         for game in range(1, self.args.NUM_TRAIN_ITER + 1):
@@ -67,7 +65,7 @@ class SnakeGame:
                 "Max points so far:", max(self.points_results[-NUM_TO_STAT:]),
                 "Min points so far:", min(self.points_results[-NUM_TO_STAT:]),")",
             )
-            # YOUR CODE HERE
+      
         print("Training takes", time.time() - start, "seconds")
         #   THIS LINE WILL SAVE THE MODEL TO THE FILE "model.npy"
         self.agent.save_model()
@@ -83,9 +81,6 @@ class SnakeGame:
         points_results = []
         start = time.time()
 
-        #   This loop runs the test the specified number of times. 
-        #   This is where you will write your code.
-        #   Use self.env.reset() to reset your state everytime a new game begins.
         for game in range(1, self.args.NUM_TEST_ITER + 1):
             print("TESTING NUMBER: " + str(game))
                 
@@ -108,8 +103,7 @@ class SnakeGame:
 
 
     #   This function is the one where the game will be displayed.
-    #   This function is already written for you. No changes are necessary
-    #       as long as YOU don't change function names or parameters.
+    
     def show_games(self):
         print("Display Games")
         self.env.display()
